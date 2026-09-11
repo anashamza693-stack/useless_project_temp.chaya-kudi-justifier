@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chaya Kudi Justifier</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>☕ Chaya Kudi Justifier</h1>
+  <div class="subtitle">Peer-reviewed excuses for your next tea break</div>
+
+  <div class="card">
+    <div class="excuse-box" id="excuseBox">
+      Tap the button below for scientifically-backed justification.
+    </div>
+    <button id="justifyBtn">Justify My Chaya Break</button>
+    <button class="secondary-btn" id="certBtn">Generate Chaya Certificate</button>
+  </div>
+
+  <div class="card">
+    <div class="stats-row">
+      <div>
+        <div class="stat-num" id="streakNum">0</div>
+        <div class="stat-label">Breaks this week</div>
+      </div>
+      <div>
+        <div class="stat-num" id="prodNum">0%</div>
+        <div class="stat-label">Peak productivity</div>
+      </div>
+    </div>
+    <canvas id="chart" width="560" height="180"></canvas>
+    <div class="kudumbam" id="kudumbamMsg"></div>
+  </div>
+</div>
+
+<div id="certModal">
+  <div class="modal-inner">
+    <canvas id="certCanvas" width="600" height="420"></canvas>
+    <button id="downloadCertBtn">Download Certificate</button>
+    <button class="secondary-btn" id="closeCertBtn">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
